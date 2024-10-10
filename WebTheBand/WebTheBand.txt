@@ -1,0 +1,9 @@
+Những thành phần của một website The Band: 
+1. Header 
+2. Navigation bar (chuyển đến trang chính của website) 
+3. Breadcrumb (Khóa học > HTML,CSS)
+4. Sidebar 
+5. Slider (nội dung chạy) 
+6. Footer  
+7. Content 
+8. Banner 

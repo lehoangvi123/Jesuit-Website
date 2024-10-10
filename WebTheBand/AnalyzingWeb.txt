@@ -1,0 +1,13 @@
+1. Phân tích giao diện: - OK 
+- Tìm thành phần của website: 
+Header 
+Slider 
+Content  
+    About 
+    Tour 
+    Contact 
+    Image  
+    Footer 
+Footer  
+
+Thành phần cấu tạo nên một website. 

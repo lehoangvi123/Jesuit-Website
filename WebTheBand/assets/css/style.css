@@ -1,0 +1,694 @@
+/* Reset CSS*/ 
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;  
+    /*This reset way is simple but very good */ 
+}  
+/* Ctrl + alt + down */ 
+
+/* The law to design a website */
+
+/*
+  1.From outside to inside 
+  2. From up to bottom 
+  3.Overall 
+  */
+
+/* 
+1. Location 
+2. Size (width, height) 
+3. Color 
+4. Shape (font-family, circle, square,...) 
+*/
+
+html{ 
+    font-family: Helvetica;  
+    height: 3000px;
+}
+
+#main{ 
+    
+} 
+
+/* Row column layout common */
+.row {
+    margin-left: -14px; 
+    margin-right: -14px;   
+}  
+
+.row-1{ 
+    display: inline-block; 
+    text-align: left; 
+}
+
+.row-2{  
+    /* text-align: right; */ 
+    margin-left: 100px;
+}
+
+
+
+.col{ 
+    float: left; 
+    padding-left: 8px; 
+    padding-right: 8px; 
+} 
+
+/* When there have three column */
+.col-third{ 
+    width: 33.33%; 
+} 
+/* when there have two column  */
+.col-half{ 
+    width: 50%; 
+} 
+/* when there just have one column  */
+.col-full{ 
+    width: 100%;
+} 
+
+.text-center{ 
+    text-align: center !important; 
+}
+
+.pull-right{ 
+    float: right !important;
+}
+
+#header{
+    height: 46px; 
+    background-color: #98212D;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;  
+    z-index: 1; 
+}   
+
+/* This is the name of class, when the class have this name, the text color automatically move to white */
+.text-white{ 
+    color: #fff !important; 
+} 
+
+.text-black{ 
+    color: #000 !important; 
+}
+
+#nav{ 
+    display: inline-block;
+}
+ 
+#nav, .subnav{  
+    list-style-type: none;
+}
+
+#nav > li { 
+    display: inline-block; /*can not */
+}
+
+#nav li{
+     padding:8px;
+     position: relative;   
+     
+}   
+
+#nav > li > a {
+    color: #fff;  
+    text-transform: uppercase; 
+}
+
+#nav li a{
+    text-decoration: none; 
+    line-height: 30px;  
+    padding-top: 0;
+    padding-left: 24px; 
+    padding-right: 24px;  
+    display: block;   
+    cursor: pointer; 
+    font-family: 'Roboto', sans-serif;  
+    font-weight: bold;
+
+}  
+
+#nav li:hover .subnav{
+    display: block;   
+}
+
+#nav > li:hover, #nav .subnav li:hover{ 
+    color: #98212D;
+    background-color: #ccc;
+}
+
+#nav > li:hover > a{
+    color: #98212D;
+}
+
+
+#nav li:hover a{
+    display: inline-block; 
+    /* height: 100%; */
+}
+
+#nav .subnav{  
+    display: none;   
+     /*hidden */ 
+    /* this is minimum width  */
+    /* min-width: 160px;  */ 
+    /* top: 46px  */ 
+    top: 100%;
+    left: 0;
+    position: absolute; 
+    background-color: #fff;  
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+} 
+ 
+#nav .subnav a{ 
+    color: #000;  
+    padding: 0 12px;  
+    line-height: 38px; 
+} 
+
+/*#nav .subnav li:hover{ 
+    color: #000; 
+    background-color: #ccc;
+} */
+
+#header .search-btn{ 
+    float: right;   
+    padding: 0 26px;   
+    cursor: pointer;  
+    /* change the cursor to the pointer shape when hover  */
+} 
+
+#header .search-btn:hover { 
+    background-color: #ccc;
+}
+
+#header .search-icon{ 
+    color: #fff; 
+    font-size: 18px; 
+    line-height: 46px; 
+
+}
+
+#slider {
+    /* height: 400px;  */
+    /* position: relative; */ 
+    /* position: relative: make the sub bar disappear, should be delete  */
+    margin-top: 46px;   
+     /* the value of weight of the slider itself */
+    padding-top: 30%;   
+    /* background: url('../Img/20240919_173833.jpg') top center / cover no-repeat;    */
+    background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 40%,rgba(0,0,0,0.9) 100%),  url('../Img/20240919_173833.jpg') top center / cover no-repeat;
+
+}      
+
+#slider #slider-link{ 
+    text-decoration: none;
+}
+
+/* .slider-img{ 
+    background: url('../Img/20240919_173833.jpg') top center / cover no-repeat;   
+    
+
+} */
+
+
+
+
+#slider .text-heading{ 
+    font-weight: 1000; 
+    font-family: italic; 
+    /* reduce the bold of the text  */
+    /* font-size: 15px; */
+}
+#slider .text-content{ 
+    position: relative;  
+    bottom: 50px; 
+    color: #ffffffce; 
+    left: 50%; 
+    /* transform: translateX(-50%);  adjust to the center */  
+    right: 0; 
+    left: 0; 
+    text-align: center;  
+    margin-top: 10px; 
+    /* background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,1.0) 100%); */
+
+}
+#slider .text-description{ 
+    margin-top: 25px;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-style: italic;
+}
+
+#container{
+
+}
+#content{
+    height: 1000px; 
+    background-color: #fff;
+} 
+
+#content .content-section{ 
+    width: 800px;  
+    padding: 40px 0 40px; 
+    margin-left: auto; 
+    margin-right: auto;  
+} 
+ 
+#content .section-heading{ 
+    font-size: 30px;  
+    text-align: center;  
+    font-weight: 500;  
+    /* make the word thinner */
+    letter-spacing: 4px;  
+    /* the space of letter is spaced roughly 4 px  */
+} 
+
+#content .section-sub-heading{ 
+    font-size: 15px;  
+    text-align: center;  
+    margin-top: 25px;  
+    /* make the margin space on the top 25px */ 
+    font-style: italic; 
+    opacity: 0.6; 
+} 
+
+#content .about-text{ 
+    margin-top: 25px; 
+    font-size: 15px;  
+    text-align: justify;  
+    /* the text-align justify align perfectly with both the left and right edges of the text box or page*/
+    line-height: 1.4;
+    /* the height of line between two lines is 1.4 */
+}  
+
+#content .member-list{ 
+    margin-top: 48px;  
+    /* put margin of top to 48pxs */
+}
+
+#content .member-item{ 
+    width: 200px;  
+    height: 200px;  
+    margin: 20px; 
+    float: left; 
+    width: 28%; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+} 
+
+#content .member-item img{
+    width: 141px; 
+    height: 171px;   
+    text-align: center;
+    
+} 
+
+#content .member-name{ 
+    text-align: center; 
+    margin-top: 17px; 
+} 
+
+/* Tour section */ 
+.tour-section{ 
+    background-color: #98212D; 
+    /* background: url(https://jcapsj.org/wp-content/uploads/1/2024/08/2024.08.Fr_.-Koko-with-JCAP-delegates.jpg);  */
+    height: 1200px; 
+
+}
+
+.tickets-list{ 
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 40px;  
+    border-radius: 20px;
+
+}  
+
+.tickets-list .quantity{ 
+    float: left; 
+    width: 24px;  
+    height: 24px; 
+    background-color: #000; 
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 24px;  
+    color: white; 
+    margin-top: -3px;  
+    margin-right: 5px;
+}
+
+.tickets-list li{ 
+    color: #ccc;
+    font-size: 15px;  
+    padding: 12px 16px;  
+    /* border: 1px solid #ddd; */
+    list-style-type: none;
+
+}
+
+.tickets-list .sold-out{ 
+    background-color: #f44336; 
+    color: #fff; 
+    padding: 4px 4px;  
+    margin-left: 16px; 
+} 
+
+/* .tickets-list .quantity{ 
+    float: right; 
+    width: 24px;  
+    height: 24px; 
+    background-color: #000; 
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 24px;  
+    color: white; 
+    margin-top: -3px; 
+} */
+
+
+
+/* Ctrl + Shift + ->
+   alt + Shift + -> 
+   Ctrl + Shift + L 
+   Space */
+
+.place-list {
+    margin-top: 32px;   
+    margin-bottom: 58px; 
+    height: 450px;   
+    /* margin-left: -10px; 
+    margin-right: -19px;   */
+    
+}
+.place-item{ 
+    float: left;  
+    width: 33.333%; 
+    padding: 0 8px;  
+
+}
+.place-img  {
+    /* width: 100%;  */ 
+    width: 260px;
+    height: 245px;   
+    display: block;  
+    /* become a block and prevent the small space */
+}  
+
+.place-img:hover{ 
+    opacity: 0.6; 
+    /* When I move the mouse to hover the image, the image are dimmed */
+} 
+
+.place-body { 
+    background-color: #fff;  
+    font-size: 15px; 
+    padding: 16px; 
+    height: 400px; 
+}
+
+.place-heading{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.place-time{
+    margin-top: 15px;  
+    margin-bottom: 15px;  
+    color: #757575; 
+    text-align: center; 
+}
+
+.place-desc{
+    margin-top: 15px; 
+    line-height: 1.4;
+}
+.btn{
+   color: #fff;
+   background-color: #000;
+   text-decoration: none;
+   padding: 11px 16px;
+   border-radius: 10px;
+   display: inline-block;
+   margin-top: 15px;
+   cursor: pointer;
+   border: none;
+   position: relative;
+   top: 50px;
+   /* text-align: center; */
+   /* display: flex; */
+   /* align-items: center; */
+   /* justify-content: center; */
+   left: 60px;
+    
+}
+ 
+/* Create a float interface in buy ticket model: use Position: fixed */
+
+#footer{
+
+}
+  
+
+.modal{ 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    /* I click but actually can not click the button */ 
+    /* background: rbga(0,0,0,0.4); in the internal */ 
+    display: none;
+    align-items: center; 
+    justify-content: center;  
+}    
+
+.modal.open{ 
+    display: flex;
+}
+
+
+
+.modal-header{
+    background: #009668; 
+    height: 130px; 
+    display: flex;  
+    /* display: flex may be to flex something */
+    align-items: center; 
+    justify-content:center; 
+    font-size: 30px; 
+    color: #fff;
+} 
+
+.modal-container{ 
+    background: #fff; 
+    width: 900px;  
+
+    min-height: 200px;  
+    position: relative;  
+    animation: modalFaceIn ease 1s; 
+}  
+
+.ti-bag:before {
+    content: "\e655";
+    margin-right: 2px;
+}
+
+.modal-heading-icon{ 
+    margin-right: 18px;
+} 
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5; 
+    padding: 15px;  
+    /* margin-right: 16px; */
+} 
+
+.modal-close:hover{ 
+    opacity: 1;
+} 
+
+.modal-body{ 
+    padding: 16px; 
+} 
+
+.modal-label{ 
+    display: block;  
+    /* property: each div will lie in the distinct line, not lie in the same block or same line */
+    font-size: 15px;   
+    margin-bottom: 8px; 
+} 
+
+.modal-input{ 
+    border: 1px solid #ccc; 
+    width: 100%; 
+    padding: 10px; 
+    font-size: 15px;  
+    margin-bottom: 15px; 
+}  
+
+.ti-bag:before {
+    content: "\e655";
+    margin-right: 13px;
+}
+
+#buy-ticket{ 
+    background: #009668;
+    border: none; 
+    color: #fff; 
+    width: 100%; 
+    font-size: 15px; 
+    text-transform: uppercase; 
+    padding: 18px;  
+    cursor: pointer;
+} 
+
+#buy-ticket:hover{ 
+    opacity: 0.8; 
+} 
+
+.modal-footer{ 
+    padding: 16px; 
+    text-align: right; 
+    color: #2196F3 !important; 
+} 
+
+.modal-footer a{ 
+    opacity: 0.7;
+}  
+
+/* animation for the interface */
+@keyframes modalFaceIn{
+    from {
+        transform: translateY(-100px);  
+        opacity: 0;
+    } 
+
+    to{ 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+ 
+.mt-8{ 
+    margin-top: 8px !important; 
+} 
+
+.mt-16{ 
+    margin-top: 16px !important;
+} 
+
+/* add fake element */ 
+.row::after{ 
+    content:" "; 
+    display: block; 
+    clear: both;
+}
+
+/* Contact-content part  */ 
+.contact-content{ 
+    margin-top: 1px;  
+    text-align: center;
+}  
+
+/* adjust the name input placeholder */
+.col-half-1{ 
+    width: 172px; 
+}  
+
+.col-half-2{ 
+    width: 20px;  
+    margin-left: 30px; 
+}
+
+/* of message input */
+.col-width-1{ 
+    width: 32px;
+}
+
+.contact-info{
+    font-size: 18px; 
+    line-height: 1.4; 
+} 
+
+.contact-info i[class*="ti-"] {
+    width: 20px; 
+    Display: inline-block; 
+} 
+
+.contact-form{ 
+    font-size: 15px; 
+} 
+
+.contact-form .form-control{ 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    width: 100%; 
+    outline: none; 
+} 
+
+.contact-form .form-submit-btn{ 
+    background-color: #000; 
+    color: #fff; 
+    border: 1px solid #000; 
+    padding: 10px 16px; 
+    /* float: right */ 
+    margin-right: 35px;  
+    /* position: relative; */
+    /* left: 34%; */
+} 
+
+.map-section img{ 
+    width: 100%; 
+    margin-top: 150px;
+} 
+
+/* footer */ 
+#footer{ 
+    padding: 30px 16px;
+    text-align: center;
+    background-color: #dbdbdb;
+    margin-top: 80px;
+
+} 
+
+#footer .social-list{ 
+    font-size: 24px;
+} 
+
+#footer .social-list a{
+    color: rgba(0,0,0,0.6);  
+    text-decoration: none; 
+} 
+
+#footer .copyright a:hover, #footer .social-list a:hover{ 
+    opacity: 0.4;
+} 
+
+#footer .copyright{ 
+    margin-top: 15px; 
+    color: rgba(0,0,0,0.5);
+}  
+
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+}  
+
+.position{ 
+    position: relative;
+    top: 0px;
+    left: 36%;
+    transform: translateX(-50%);
+}
